@@ -1,4 +1,5 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
+import { Pays } from "src/pays/models/pays.entity";
+import { Column, CreateDateColumn, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
 
 @Entity()
 @Unique(['label'])
@@ -21,5 +22,9 @@ export class Operateur {
 
     @UpdateDateColumn()
     updatedAt: Timestamp;
+
+    @ManyToMany(() => Pays)
+    @JoinTable()
+    pays: Pays[];
 
 }

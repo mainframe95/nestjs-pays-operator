@@ -1,4 +1,4 @@
-import { IsEmail, IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
+import { IsArray, IsEmail, IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
 
 export class InsertOperateurDto {
 
@@ -9,5 +9,9 @@ export class InsertOperateurDto {
     @IsNumber()
     @IsNotEmpty()
     nbreClients: number;
+
+    @IsArray()
+    @IsNotEmpty()
+    paysId: number[];
 
 }

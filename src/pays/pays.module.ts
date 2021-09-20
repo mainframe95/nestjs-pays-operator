@@ -7,6 +7,7 @@ import { PaysService } from './pays.service';
 @Module({
   imports: [TypeOrmModule.forFeature([Pays])],
   controllers: [PaysController],
-  providers: [PaysService]
+  providers: [PaysService],
+  exports: [PaysService]
 })
 export class PaysModule {}

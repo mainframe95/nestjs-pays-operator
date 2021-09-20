@@ -46,4 +46,19 @@ export class PaysService {
         }
     }
 
+    async findOne(id: number): Promise<Pays> {
+        try {
+            return this.PaysRepo.findOne(id);
+        } catch (err) {
+            throw new HttpException(`not found pays`, HttpStatus.NOT_FOUND);
+        }
+    }
+    async findBtyIds(paysId: Array<number>): Promise<Pays[]> {
+        try {
+            return this.PaysRepo.findByIds(paysId);
+        } catch (err) {
+            throw new HttpException(`not found pays`, HttpStatus.NOT_FOUND);
+        }
+    }
+
 }
