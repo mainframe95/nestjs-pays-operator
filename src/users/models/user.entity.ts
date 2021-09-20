@@ -1,5 +1,6 @@
 import { IsEmail, IsString } from "class-validator";
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
+import { Pays } from "src/pays/models/pays.entity";
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
 
 @Entity()
 @Unique(['username'])
@@ -22,6 +23,12 @@ export class User {
 
     @Column({ default: true })
     isActive: boolean;
+
+    @OneToMany(() => Pays, pays => pays.createBy)
+    paysCreated: Pays[];
+
+    @OneToMany(() => Pays, pays => pays.createBy)
+    operateurCreated: Pays[];
 
     @CreateDateColumn()
     createdAt: Timestamp;
