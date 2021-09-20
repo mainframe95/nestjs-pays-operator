@@ -6,14 +6,14 @@ import { UpdatedUserDto } from './models/dto/updateUser.dto';
 import { User } from './models/user.entity';
 import { UsersService } from './users.service';
 import { RolesGuard } from './role/roles.guard';
+import { JwtAuthGuard } from './auth/jwt-auth.guard';
 
 @Controller('users')
-@UseGuards(RolesGuard)
 export class UsersController {
-    
+
     constructor(
         private userServ: UsersService
-    ) {}
+    ) { }
 
     @Get()
     // @Roles(Role.Admin)
@@ -24,6 +24,8 @@ export class UsersController {
     async createUser(@Body(ValidationPipe) insertUser: InsertUserDto): Promise<User> {
         return await this.userServ.createUser(insertUser);
     }
+
+    @UseGuards(JwtAuthGuard)
     @Patch()
     async updateUser(@Body(ValidationPipe) insertUser: UpdatedUserDto): Promise<User> {
         return await this.userServ.updateUser(insertUser);

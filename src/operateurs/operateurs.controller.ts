@@ -1,9 +1,11 @@
-import { Body, Controller, Get, Patch, Post, ValidationPipe } from '@nestjs/common';
+import { Body, Controller, Get, Patch, Post, UseGuards, ValidationPipe } from '@nestjs/common';
+import { JwtAuthGuard } from 'src/users/auth/jwt-auth.guard';
 import { InsertOperateurDto } from './models/dto/insertUser.dto';
 import { UpdatedOperateurDto } from './models/dto/updateUser.dto';
 import { Operateur } from './models/operateur.entity';
 import { OperateursService } from './operateurs.service';
 
+@UseGuards(JwtAuthGuard)
 @Controller('operateurs')
 export class OperateursController {
 
