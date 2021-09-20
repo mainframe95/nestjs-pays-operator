@@ -16,7 +16,7 @@ export class UsersController {
     ) {}
 
     @Get()
-    @Roles(Role.Admin)
+    // @Roles(Role.Admin)
     async findAll(): Promise<User[]> {
         return await this.userServ.findAll();
     }
