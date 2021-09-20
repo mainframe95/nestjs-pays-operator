@@ -1,5 +1,6 @@
 import { Pays } from "src/pays/models/pays.entity";
-import { Column, CreateDateColumn, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
+import { User } from "src/users/models/user.entity";
+import { Column, CreateDateColumn, Entity, JoinTable, ManyToMany, ManyToOne, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
 
 @Entity()
 @Unique(['label'])
@@ -26,5 +27,8 @@ export class Operateur {
     @ManyToMany(() => Pays, pays => pays.operateurs)
     @JoinTable()
     pays: Pays[];
+
+    @ManyToOne(() => User, user => user.operateurCreated)
+    createBy: User;
 
 }

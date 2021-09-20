@@ -45,4 +45,19 @@ export class UsersService {
             }
         }
     }
+
+
+    /**
+     * 
+     * @param username 
+     * @returns user or 401
+     * @description verifie si le username de l'utilisateur existe lors du login
+     */
+    async verifUser(username: string): Promise<User> {
+        try {
+            return this.userRepo.findOneOrFail({where: {username}});
+        } catch (error) {
+            throw new HttpException('username or password invalid',HttpStatus.UNAUTHORIZED);
+        }
+    }
 }

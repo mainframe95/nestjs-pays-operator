@@ -12,7 +12,7 @@ export class UsersController {
     ) {}
 
     @Get()
-    async findAll(@Body(ValidationPipe) insertUser: InsertUserDto): Promise<User[]> {
+    async findAll(): Promise<User[]> {
         return await this.userServ.findAll();
     }
     @Post()

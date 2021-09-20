@@ -1,5 +1,6 @@
 import { Operateur } from "src/operateurs/models/operateur.entity";
-import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, Entity, ManyToMany, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
+import { User } from "src/users/models/user.entity";
+import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, Entity, ManyToMany, ManyToOne, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
 
 @Entity()
 @Unique(['label'])
@@ -16,6 +17,9 @@ export class Pays {
 
     @Column({ default: true })
     isActive: boolean;
+
+    @ManyToOne(() => User, user => user.paysCreated)
+    createBy: User;
 
     @ManyToMany(() => Operateur, operateur => operateur.pays)
     operateurs: Operateur[];
