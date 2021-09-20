@@ -23,7 +23,7 @@ export class Operateur {
     @UpdateDateColumn()
     updatedAt: Timestamp;
 
-    @ManyToMany(() => Pays)
+    @ManyToMany(() => Pays, pays => pays.operateurs)
     @JoinTable()
     pays: Pays[];
 

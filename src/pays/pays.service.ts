@@ -13,12 +13,15 @@ export class PaysService {
     ) {}
 
     async findAll(): Promise<any> {
-        return await this.PaysRepo.find();
+        return await this.PaysRepo.find({relations: ['operateurs']});
     }
 
     async createPays(data: InsertPaysDto): Promise<Pays> {
+        const { label } = data;
         try {
-            return await this.PaysRepo.save(data);
+            const pays = new Pays();
+            pays.label = label;
+            return await this.PaysRepo.save(pays);
         } catch (err) {
             if (err.sqlState === '23000') {
                 throw new HttpException(`can't duplicate pays: ${data.label}`, HttpStatus.CONFLICT);
@@ -29,7 +32,6 @@ export class PaysService {
     }
 
     async updatePays(data: UpdatedPaysDto): Promise<Pays> {
-
         const { id, label } = data;
         try {
             const findPays = await this.PaysRepo.findOne(id);
@@ -53,6 +55,7 @@ export class PaysService {
             throw new HttpException(`not found pays`, HttpStatus.NOT_FOUND);
         }
     }
+
     async findBtyIds(paysId: Array<number>): Promise<Pays[]> {
         try {
             return this.PaysRepo.findByIds(paysId);
