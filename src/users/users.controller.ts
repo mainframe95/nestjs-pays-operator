@@ -1,10 +1,14 @@
-import { Body, Controller, Get, Patch, Post, ValidationPipe } from '@nestjs/common';
+import { Body, Controller, Get, Patch, Post, UseGuards, ValidationPipe } from '@nestjs/common';
+import { Roles } from './role/decorators/roles.decorator';
+import { Role } from './role/enum/role.enum';
 import { InsertUserDto } from './models/dto/insertUser.dto';
 import { UpdatedUserDto } from './models/dto/updateUser.dto';
 import { User } from './models/user.entity';
 import { UsersService } from './users.service';
+import { RolesGuard } from './role/roles.guard';
 
 @Controller('users')
+@UseGuards(RolesGuard)
 export class UsersController {
     
     constructor(
@@ -12,6 +16,7 @@ export class UsersController {
     ) {}
 
     @Get()
+    @Roles(Role.Admin)
     async findAll(): Promise<User[]> {
         return await this.userServ.findAll();
     }

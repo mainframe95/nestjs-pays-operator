@@ -1,6 +1,7 @@
 import { IsEmail, IsString } from "class-validator";
 import { Pays } from "src/pays/models/pays.entity";
 import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, Timestamp, Unique, UpdateDateColumn } from "typeorm";
+import { Role } from "../role/enum/role.enum";
 
 @Entity()
 @Unique(['username'])
@@ -26,6 +27,9 @@ export class User {
 
     @OneToMany(() => Pays, pays => pays.createBy)
     paysCreated: Pays[];
+    
+    @Column()
+    roles: Role;
 
     @OneToMany(() => Pays, pays => pays.createBy)
     operateurCreated: Pays[];
