@@ -28,7 +28,7 @@ export class User {
     @OneToMany(() => Pays, pays => pays.createBy)
     paysCreated: Pays[];
     
-    @Column()
+    @Column({ default: 'Admin'})
     roles: Role;
 
     @OneToMany(() => Pays, pays => pays.createBy)

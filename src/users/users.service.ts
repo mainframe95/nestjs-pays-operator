@@ -19,8 +19,14 @@ export class UsersService {
 
     async createUser(insertUser: InsertUserDto): Promise<User> {
         try {
+            console.log('inserty', insertUser)
+            const user = new User();
+            user.username = insertUser.username;
+            user.password = insertUser.password;
+            user.email = insertUser.email || null;
             return await this.userRepo.save(insertUser);
         } catch (err) {
+            console.log('error', err)
             if (err.sqlState === '23000') {
                 throw new HttpException(`can't duplicate username: ${insertUser.username}`, HttpStatus.CONFLICT);
             } else {

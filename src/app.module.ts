@@ -8,6 +8,9 @@ import { User } from './users/models/user.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Pays } from './pays/models/pays.entity';
 import { Operateur } from './operateurs/models/operateur.entity';
+import { TransformInterceptor } from './interceptors/transform.interceptor';
+import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
+import { HttpExceptionFilter } from './interceptors/http-error.filter';
 
 @Module({
   imports: [
@@ -29,6 +32,16 @@ import { Operateur } from './operateurs/models/operateur.entity';
     PaysModule,
     OperateursModule],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [
+    AppService,
+    {
+      provide: APP_INTERCEPTOR,
+      useClass: TransformInterceptor
+    },
+    {
+      provide: APP_FILTER,
+      useClass: HttpExceptionFilter 
+    }
+  ],
 })
 export class AppModule { }

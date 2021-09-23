@@ -1,0 +1,213 @@
+Nest application successfully started
+zed
+
+Starting Nest application...TypeOrmModule dependencies initializedPassportModule dependencies initializedJwtModule dependencies initializedAppModule dependencies initializedTypeOrmCoreModule dependencies initializedTypeOrmModule dependencies initializedTypeOrmModule dependencies initializedTypeOrmModule dependencies initializedPaysModule dependencies initializedUsersModule dependencies initializedOperateursModule dependencies initializedAppController {/}:Mapped {/, GET} routeUsersController {/users}:Mapped {/users, GET} routeMapped {/users, POST} routeMapped {/users, PATCH} routeAuthController {/auth}:Mapped {/auth/login, POST} routeMapped {/auth/profile, GET} routePaysController {/pays}:Mapped {/pays, GET} routeMapped {/operateurs, GET} routeMapped {/pays, POST} routeMapped {/operateurs, POST} routeOperateursController {/operateurs}:Mapped {/operateurs, PATCH} routeMapped {/pays, PATCH} routeNest application successfully startedStarting Nest application...
+TypeOrmModule dependencies initialized
+PassportModule dependencies initialized
+JwtModule dependencies initialized
+AppModule dependencies initialized
+TypeOrmCoreModule dependencies initialized
+TypeOrmModule dependencies initialized
+TypeOrmModule dependencies initialized
+TypeOrmModule dependencies initialized
+PaysModule dependencies initialized
+UsersModule dependencies initialized
+OperateursModule dependencies initialized
+AppController {/}:
+Mapped {/, GET} route
+UsersController {/users}:
+Mapped {/users, GET} route
+Mapped {/users, POST} route
+Mapped {/users, PATCH} route
+AuthController {/auth}:
+Mapped {/auth/login, POST} route
+Mapped {/auth/profile, GET} route
+PaysController {/pays}:
+Mapped {/pays, GET} route
+Mapped {/pays, POST} route
+Mapped {/pays, PATCH} route
+OperateursController {/operateurs}:
+Mapped {/operateurs, GET} route
+Mapped {/operateurs, POST} route
+Mapped {/operateurs, PATCH} route
+Nest application successfully started
+-> 1632428894199 Starting Nest application...
+-> 1632428894530 TypeOrmModule dependencies initialized
+-> 1632428894530 PassportModule dependencies initialized
+-> 1632428894533 JwtModule dependencies initialized
+-> 1632428894535 AppModule dependencies initialized
+-> 1632428894687 TypeOrmCoreModule dependencies initialized
+-> 1632428894688 TypeOrmModule dependencies initialized
+-> 1632428894688 TypeOrmModule dependencies initialized
+-> 1632428894688 TypeOrmModule dependencies initialized
+-> 1632428894751 PaysModule dependencies initialized
+-> 1632428894752 UsersModule dependencies initialized
+-> 1632428894752 OperateursModule dependencies initialized
+-> 1632428894761 AppController {/}:
+-> 1632428894772 Mapped {/, GET} route
+-> 1632428894773 UsersController {/users}:
+-> 1632428894774 Mapped {/users, GET} route
+-> 1632428894775 Mapped {/users, POST} route
+-> 1632428894775 Mapped {/users, PATCH} route
+-> 1632428894776 AuthController {/auth}:
+-> 1632428894776 Mapped {/auth/login, POST} route
+-> 1632428894777 Mapped {/auth/profile, GET} route
+-> 1632428894777 PaysController {/pays}:
+-> 1632428894778 Mapped {/pays, GET} route
+-> 1632428894778 Mapped {/pays, POST} route
+-> 1632428894779 Mapped {/pays, PATCH} route
+-> 1632428894779 OperateursController {/operateurs}:
+-> 1632428894780 Mapped {/operateurs, GET} route
+-> 1632428894780 Mapped {/operateurs, POST} route
+-> 1632428894781 Mapped {/operateurs, PATCH} route
+-> 1632428894786 Nest application successfully started
+-> 1632428921487 Starting Nest application...
+-> 1632428921841 TypeOrmModule dependencies initialized
+-> 1632428921842 PassportModule dependencies initialized
+-> 1632428921842 JwtModule dependencies initialized
+-> 1632428921843 AppModule dependencies initialized
+-> 1632428922093 TypeOrmCoreModule dependencies initialized
+-> 1632428922093 TypeOrmModule dependencies initialized
+-> 1632428922093 TypeOrmModule dependencies initialized
+-> 1632428922094 TypeOrmModule dependencies initialized
+-> 1632428922139 PaysModule dependencies initialized
+-> 1632428922139 UsersModule dependencies initialized
+-> 1632428922139 OperateursModule dependencies initialized
+-> 1632428922152 AppController {/}:
+-> 1632428922156 Mapped {/, GET} route
+-> 1632428922157 UsersController {/users}:
+-> 1632428922157 Mapped {/users, GET} route
+-> 1632428922158 Mapped {/users, POST} route
+-> 1632428922160 Mapped {/users, PATCH} route
+-> 1632428922160 AuthController {/auth}:
+-> 1632428922162 Mapped {/auth/login, POST} route
+-> 1632428922163 Mapped {/auth/profile, GET} route
+-> 1632428922163 PaysController {/pays}:
+-> 1632428922164 Mapped {/pays, GET} route
+-> 1632428922167 Mapped {/pays, POST} route
+-> 1632428922167 Mapped {/pays, PATCH} route
+-> 1632428922168 OperateursController {/operateurs}:
+-> 1632428922168 Mapped {/operateurs, GET} route
+-> 1632428922169 Mapped {/operateurs, POST} route
+-> 1632428922169 Mapped {/operateurs, PATCH} route
+-> 1632428922174 Nest application successfully started
+-> 1632429010521 Starting Nest application...
+-> 1632429010807 TypeOrmModule dependencies initialized
+-> 1632429010808 PassportModule dependencies initialized
+-> 1632429010809 JwtModule dependencies initialized
+-> 1632429010810 AppModule dependencies initialized
+-> 1632429010986 TypeOrmCoreModule dependencies initialized
+-> 1632429010987 TypeOrmModule dependencies initialized
+-> 1632429010987 TypeOrmModule dependencies initialized
+-> 1632429010988 TypeOrmModule dependencies initialized
+-> 1632429011066 PaysModule dependencies initialized
+-> 1632429011076 UsersModule dependencies initialized
+-> 1632429011077 OperateursModule dependencies initialized
+-> 1632429011094 AppController {/}:
+-> 1632429011106 Mapped {/, GET} route
+-> 1632429011108 UsersController {/users}:
+-> 1632429011110 Mapped {/users, GET} route
+-> 1632429011112 Mapped {/users, POST} route
+-> 1632429011116 Mapped {/users, PATCH} route
+-> 1632429011117 AuthController {/auth}:
+-> 1632429011119 Mapped {/auth/login, POST} route
+-> 1632429011123 Mapped {/auth/profile, GET} route
+-> 1632429011126 PaysController {/pays}:
+-> 1632429011128 Mapped {/pays, GET} route
+-> 1632429011129 Mapped {/pays, POST} route
+-> 1632429011131 Mapped {/pays, PATCH} route
+-> 1632429011134 OperateursController {/operateurs}:
+-> 1632429011138 Mapped {/operateurs, GET} route
+-> 1632429011140 Mapped {/operateurs, POST} route
+-> 1632429011143 Mapped {/operateurs, PATCH} route
+-> 1632429011151 Nest application successfully started
+-> 1632429031528 Starting Nest application...
+-> 1632429031862 TypeOrmModule dependencies initialized
+-> 1632429031863 PassportModule dependencies initialized
+-> 1632429031873 JwtModule dependencies initialized
+-> 1632429031875 AppModule dependencies initialized
+-> 1632429032045 TypeOrmCoreModule dependencies initialized
+-> 1632429032046 TypeOrmModule dependencies initialized
+-> 1632429032047 TypeOrmModule dependencies initialized
+-> 1632429032047 TypeOrmModule dependencies initialized
+-> 1632429032106 PaysModule dependencies initialized
+-> 1632429032108 UsersModule dependencies initialized
+-> 1632429032109 OperateursModule dependencies initialized
+-> 1632429032121 AppController {/}:
+-> 1632429032130 Mapped {/, GET} route
+-> 1632429032133 UsersController {/users}:
+-> 1632429032135 Mapped {/users, GET} route
+-> 1632429032149 Mapped {/users, POST} route
+-> 1632429032151 Mapped {/users, PATCH} route
+-> 1632429032152 AuthController {/auth}:
+-> 1632429032160 Mapped {/auth/login, POST} route
+-> 1632429032165 Mapped {/auth/profile, GET} route
+-> 1632429032175 PaysController {/pays}:
+-> 1632429032290 Mapped {/pays, GET} route
+-> 1632429032330 Mapped {/pays, POST} route
+-> 1632429032334 Mapped {/pays, PATCH} route
+-> 1632429032367 OperateursController {/operateurs}:
+-> 1632429032370 Mapped {/operateurs, GET} route
+-> 1632429032372 Mapped {/operateurs, POST} route
+-> 1632429032378 Mapped {/operateurs, PATCH} route
+-> 1632429032386 Nest application successfully started
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) Starting Nest application...
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) PassportModule dependencies initialized
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) JwtModule dependencies initialized
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) AppModule dependencies initialized
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) TypeOrmCoreModule dependencies initialized
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:30:48 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) PaysModule dependencies initialized
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) UsersModule dependencies initialized
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) OperateursModule dependencies initialized
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) AppController {/}:
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/, GET} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) UsersController {/users}:
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/users, GET} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/users, POST} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/users, PATCH} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) AuthController {/auth}:
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/auth/login, POST} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/auth/profile, GET} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) PaysController {/pays}:
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/pays, GET} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/pays, POST} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/pays, PATCH} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) OperateursController {/operateurs}:
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, GET} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, POST} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, PATCH} route
+-> Thu Sep 23 2021 20:30:49 GMT+0000 (Temps universel coordonné) Nest application successfully started
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) Starting Nest application...
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) PassportModule dependencies initialized
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) JwtModule dependencies initialized
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) AppModule dependencies initialized
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) TypeOrmCoreModule dependencies initialized
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:31:36 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) PaysModule dependencies initialized
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) UsersModule dependencies initialized
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) OperateursModule dependencies initialized
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) AppController {/}:
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/, GET} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) UsersController {/users}:
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/users, GET} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/users, POST} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/users, PATCH} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) AuthController {/auth}:
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/auth/login, POST} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/auth/profile, GET} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) PaysController {/pays}:
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/pays, GET} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/pays, POST} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/pays, PATCH} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) OperateursController {/operateurs}:
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, GET} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, POST} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, PATCH} route
+-> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Nest application successfully started

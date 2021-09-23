@@ -1,10 +1,12 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable, UseGuards } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
+import { JwtAuthGuard } from 'src/users/auth/jwt-auth.guard';
 import { Repository } from 'typeorm';
 import { InsertPaysDto } from './models/dto/insertPays.dto';
 import { UpdatedPaysDto } from './models/dto/updatePays.dto';
 import { Pays } from './models/pays.entity';
 
+@UseGuards(JwtAuthGuard)
 @Injectable()
 export class PaysService {
     constructor(
