@@ -5,7 +5,7 @@ import { CustomLogger } from './interceptors/custom-logger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     // peu etre customiser pour ecrire dans un fichier de log
-    logger: new CustomLogger(),
+    // logger: new CustomLogger(),
   });
   // app.useGlobalInterceptors(new LoggingInterceptor());
   await app.listen(3000);

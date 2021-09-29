@@ -4,13 +4,16 @@ import { Repository } from 'typeorm';
 import { InsertUserDto } from './models/dto/insertUser.dto';
 import { UpdatedUserDto } from './models/dto/updateUser.dto';
 import { User } from './models/user.entity';
+import { Roles } from './role/role.entity';
 
 @Injectable()
 export class UsersService {
 
     constructor(
         @InjectRepository(User)
-        private userRepo: Repository<User>
+        private userRepo: Repository<User>,
+        @InjectRepository(Roles)
+        private roleRepo: Repository<Roles>,
     ) { }
 
     async findAll(): Promise<User[]> {
@@ -21,9 +24,12 @@ export class UsersService {
         try {
             console.log('inserty', insertUser)
             const user = new User();
+            const userRole = await this.roleRepo.find();
+            console.log('role', userRole)
             user.username = insertUser.username;
             user.password = insertUser.password;
             user.email = insertUser.email || null;
+            user.userRoles = userRole;
             return await this.userRepo.save(insertUser);
         } catch (err) {
             console.log('error', err)

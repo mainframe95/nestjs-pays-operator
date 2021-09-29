@@ -211,3 +211,93 @@ Nest application successfully started
 -> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, POST} route
 -> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, PATCH} route
 -> Thu Sep 23 2021 20:31:37 GMT+0000 (Temps universel coordonné) Nest application successfully started
+-> Wed Sep 29 2021 16:37:27 GMT+0000 (Temps universel coordonné) Starting Nest application...
+-> Wed Sep 29 2021 16:37:27 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:37:27 GMT+0000 (Temps universel coordonné) PassportModule dependencies initialized
+-> Wed Sep 29 2021 16:37:27 GMT+0000 (Temps universel coordonné) JwtModule dependencies initialized
+-> Wed Sep 29 2021 16:37:27 GMT+0000 (Temps universel coordonné) AppModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) TypeOrmCoreModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) PaysModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) UsersModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) OperateursModule dependencies initialized
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) AppController {/}:
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/, GET} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) UsersController {/users}:
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/users, GET} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/users, POST} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/users, PATCH} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) AuthController {/auth}:
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/auth/login, POST} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/auth/profile, GET} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) PaysController {/pays}:
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/pays, GET} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/pays, POST} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/pays, PATCH} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) OperateursController {/operateurs}:
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, GET} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, POST} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, PATCH} route
+-> Wed Sep 29 2021 16:37:28 GMT+0000 (Temps universel coordonné) Nest application successfully started
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) Starting Nest application...
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) PassportModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) JwtModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) AppModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) TypeOrmCoreModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) PaysModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) UsersModule dependencies initialized
+-> Wed Sep 29 2021 16:45:10 GMT+0000 (Temps universel coordonné) OperateursModule dependencies initialized
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) AppController {/}:
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/, GET} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) UsersController {/users}:
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/users, GET} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/users, POST} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/users, PATCH} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) AuthController {/auth}:
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/auth/login, POST} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/auth/profile, GET} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) PaysController {/pays}:
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/pays, GET} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/pays, POST} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/pays, PATCH} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) OperateursController {/operateurs}:
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, GET} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, POST} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, PATCH} route
+-> Wed Sep 29 2021 16:45:11 GMT+0000 (Temps universel coordonné) Nest application successfully started
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) Starting Nest application...
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) PassportModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) JwtModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) AppModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) TypeOrmCoreModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) TypeOrmModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) PaysModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) UsersModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) OperateursModule dependencies initialized
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) AppController {/}:
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) Mapped {/, GET} route
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) UsersController {/users}:
+-> Wed Sep 29 2021 16:46:54 GMT+0000 (Temps universel coordonné) Mapped {/users, GET} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/users, POST} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/users, PATCH} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) AuthController {/auth}:
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/auth/login, POST} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/auth/profile, GET} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) PaysController {/pays}:
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/pays, GET} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/pays, POST} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/pays, PATCH} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) OperateursController {/operateurs}:
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, GET} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, POST} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Mapped {/operateurs, PATCH} route
+-> Wed Sep 29 2021 16:46:55 GMT+0000 (Temps universel coordonné) Nest application successfully started

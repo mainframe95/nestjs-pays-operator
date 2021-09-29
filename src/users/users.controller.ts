@@ -9,6 +9,7 @@ import { RolesGuard } from './role/roles.guard';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 
 @Controller('users')
+@UseGuards(JwtAuthGuard)
 export class UsersController {
 
     constructor(
@@ -16,16 +17,19 @@ export class UsersController {
     ) { }
 
     @Get()
-    // @Roles(Role.Admin)
+    @Roles(Role.Admin)
+    @UseGuards(RolesGuard)
     async findAlls(): Promise<User[]> {
         return await this.userServ.findAll();
     }
+
     @Post()
+    // @Roles(Role.Admin)
     async createUser(@Body(ValidationPipe) insertUser: InsertUserDto): Promise<User> {
         return await this.userServ.createUser(insertUser);
     }
 
-    @UseGuards(JwtAuthGuard)
+    
     @Patch()
     async updateUser(@Body(ValidationPipe) insertUser: UpdatedUserDto): Promise<User> {
         return await this.userServ.updateUser(insertUser);

@@ -11,6 +11,7 @@ import { Operateur } from './operateurs/models/operateur.entity';
 import { TransformInterceptor } from './interceptors/transform.interceptor';
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { HttpExceptionFilter } from './interceptors/http-error.filter';
+import { Roles } from './users/role/role.entity';
 
 @Module({
   imports: [
@@ -24,7 +25,8 @@ import { HttpExceptionFilter } from './interceptors/http-error.filter';
       entities: [
         User,
         Pays,
-        Operateur
+        Operateur,
+        Roles
       ],
       synchronize: true,
     }),
@@ -34,14 +36,14 @@ import { HttpExceptionFilter } from './interceptors/http-error.filter';
   controllers: [AppController],
   providers: [
     AppService,
-    {
-      provide: APP_INTERCEPTOR,
-      useClass: TransformInterceptor
-    },
-    {
-      provide: APP_FILTER,
-      useClass: HttpExceptionFilter 
-    }
+    // {
+    //   provide: APP_INTERCEPTOR,
+    //   useClass: TransformInterceptor
+    // },
+    // {
+    //   provide: APP_FILTER,
+    //   useClass: HttpExceptionFilter 
+    // }
   ],
 })
 export class AppModule { }
