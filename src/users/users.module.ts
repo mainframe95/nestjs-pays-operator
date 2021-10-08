@@ -18,7 +18,7 @@ import { Roles } from './role/role.entity';
     PassportModule,
     JwtModule.register({
       secret: jwtConstants.secret,
-      signOptions: { expiresIn: '10h' },
+      signOptions: { expiresIn: '1h' },
     })
   ],
   controllers: [UsersController, AuthController],

@@ -1,4 +1,12 @@
-import { Body, Controller, Get, Patch, Post, UseGuards, ValidationPipe } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Patch,
+  Post,
+  UseGuards,
+  ValidationPipe,
+} from '@nestjs/common';
 import { Roles } from './role/decorators/roles.decorator';
 import { Role } from './role/enum/role.enum';
 import { InsertUserDto } from './models/dto/insertUser.dto';
@@ -9,29 +17,30 @@ import { RolesGuard } from './role/roles.guard';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 
 @Controller('users')
-@UseGuards(JwtAuthGuard)
 export class UsersController {
+  constructor(private userServ: UsersService) {}
 
-    constructor(
-        private userServ: UsersService
-    ) { }
+  @Get()
+  @Roles(Role.Admin)
+  @UseGuards(JwtAuthGuard)
+  @UseGuards(RolesGuard)
+  async findAlls(): Promise<User[]> {
+    return await this.userServ.findAll();
+  }
 
-    @Get()
-    @Roles(Role.Admin)
-    @UseGuards(RolesGuard)
-    async findAlls(): Promise<User[]> {
-        return await this.userServ.findAll();
-    }
+  @Post()
+  // @Roles(Role.Admin)
+  async createUser(
+    @Body(ValidationPipe) insertUser: InsertUserDto,
+  ): Promise<User> {
+    return await this.userServ.createUser(insertUser);
+  }
 
-    @Post()
-    // @Roles(Role.Admin)
-    async createUser(@Body(ValidationPipe) insertUser: InsertUserDto): Promise<User> {
-        return await this.userServ.createUser(insertUser);
-    }
-
-    
-    @Patch()
-    async updateUser(@Body(ValidationPipe) insertUser: UpdatedUserDto): Promise<User> {
-        return await this.userServ.updateUser(insertUser);
-    }
+  @Patch()
+  @UseGuards(JwtAuthGuard)
+  async updateUser(
+    @Body(ValidationPipe) insertUser: UpdatedUserDto,
+  ): Promise<User> {
+    return await this.userServ.updateUser(insertUser);
+  }
 }

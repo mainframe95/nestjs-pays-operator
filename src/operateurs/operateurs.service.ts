@@ -12,17 +12,20 @@ export class OperateursService {
     constructor(
         @InjectRepository(Operateur)
         private operateurRepo: Repository<Operateur>,
-        private paysServ: PaysService
+        private paysServ: PaysService,
     ) { }
 
     async findAll(): Promise<Operateur[]> {
-        return await this.operateurRepo.find({ relations: ['pays'] })
+        return await this.operateurRepo.find({ relations: ['pays'] });
     }
 
+    async findOne(id: number): Promise<Operateur> {
+        return await this.operateurRepo.findOne(id, { relations: ['pays'] });
+    }
     async createOperateur(data: InsertOperateurDto): Promise<Operateur> {
         const { label, nbreClients, paysId } = data;
         try {
-            const pays = await this.paysServ.findBtyIds(paysId);;
+            const pays = await this.paysServ.findBtyIds(paysId);
             const operateur = new Operateur();
             operateur.label = label;
             operateur.nbreClients = nbreClients;
@@ -30,7 +33,10 @@ export class OperateursService {
             return await this.operateurRepo.save(operateur);
         } catch (err) {
             if (err.sqlState === '23000') {
-                throw new HttpException(`can't duplicate Operateur: ${data.label}`, HttpStatus.CONFLICT);
+                throw new HttpException(
+                    `can't duplicate Operateur: ${data.label}`,
+                    HttpStatus.CONFLICT,
+                );
             } else {
                 throw new HttpException(`can't save`, HttpStatus.BAD_REQUEST);
             }
@@ -40,7 +46,7 @@ export class OperateursService {
     async updateOperateur(data: UpdatedOperateurDto): Promise<Operateur> {
         const { id, label, nbreClients, paysId } = data;
         try {
-            const findOperateur = await this.operateurRepo.findOne(id);
+            const findOperateur = await this.operateurRepo.findOneOrFail(id);
             if (findOperateur) {
                 findOperateur.label = label;
                 findOperateur.nbreClients = nbreClients;
@@ -49,10 +55,22 @@ export class OperateursService {
             }
         } catch (err) {
             if (err.sqlState === '23000') {
-                throw new HttpException(`can't duplicate Operateur: ${data.label}`, HttpStatus.CONFLICT);
+                throw new HttpException(
+                    `can't duplicate Operateur: ${data.label}`,
+                    HttpStatus.CONFLICT,
+                );
             } else {
                 throw new HttpException(`can't update`, HttpStatus.BAD_REQUEST);
             }
+        }
+    }
+
+    async deteleteOperator(id: number): Promise<boolean> {
+        try {
+            await this.operateurRepo.delete(id);
+            return true;
+        } catch (error) {
+            throw new Error("can't delete");
         }
     }
 }
